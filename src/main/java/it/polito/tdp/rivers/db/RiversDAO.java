@@ -63,7 +63,7 @@ public List<Flow> getAllMisurazioniFiume(River r) {
 
 public Double getMedia(River r) {
 	
-	final String sql = "SELECT AVG(flow) as media FROM flow WHERE id=? ORDER BY DAY";
+	final String sql = "SELECT AVG(flow) as media FROM flow WHERE river=? ORDER BY DAY";
 
 	Double risultato =null;
 
